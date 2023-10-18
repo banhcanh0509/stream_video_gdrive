@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fetch Video Drive</title>
+        <script src="https://apis.google.com/js/api.js"></script>
+
+        <style>
+            .container {
+                width: 500px;
+                margin: 0 auto;
+            }
+
+            .videoContainer {
+                position: relative;
+                width: 100%;
+                padding-top: 56.25%;
+                background: #ddd;
+            }
+
+            .video {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .linkVideo.active {
+                color: #ff4081;
+            }
+            .linkVideo:hover {
+                cursor: pointer;
+                color: #ff4081;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Guys!</h1>
+        <h2>PornHub Videos</h2>
+        <ul class="listVideos"></ul>
+        <div class="container">
+            <div class="videoContainer">
+                <video src="" class="video" type="video/mp4" controls autoplay>Video blocked</video>
+            </div>
+        </div>
+
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
