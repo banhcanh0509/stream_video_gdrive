@@ -5,14 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Fetch Video Drive</title>
         <script src="https://apis.google.com/js/api.js"></script>
-
+        <link
+            rel="shortcut icon"
+            href="https://iconape.com/wp-content/files/rn/129261/svg/129261.svg"
+            type="image/x-icon"
+        />
         <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            h1,
+            h2 {
+                margin: 0 auto;
+                text-align: center;
+                color: #000;
+            }
+
+            h2 {
+                font-size: 32px;
+                color: #f7971d;
+            }
+
+            .empty {
+                color: #ff4081;
+                font-size: 12px;
+                margin: 20px auto 0;
+            }
+
+            li {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            li + li {
+                margin-top: 12px;
+            }
+
             .container {
                 width: 500px;
                 margin: 0 auto;
             }
 
             .videoContainer {
+                margin-top: 23px;
                 position: relative;
                 width: 100%;
                 padding-top: 56.25%;
@@ -26,10 +63,10 @@
                 height: 100%;
             }
 
-            .linkVideo.active {
+            li.linkVideo.active {
                 color: #ff4081;
             }
-            .linkVideo:hover {
+            li.linkVideo:hover {
                 cursor: pointer;
                 color: #ff4081;
             }
@@ -41,7 +78,7 @@
         <ul class="listVideos"></ul>
         <div class="container">
             <div class="videoContainer">
-                <video src="" class="video" type="video/mp4" controls autoplay>Video blocked</video>
+                <video src="" class="video" type="video/mp4" controls autoplay loop>Video blocked</video>
             </div>
         </div>
 
